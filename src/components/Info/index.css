@@ -1,0 +1,23 @@
+li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.stars-img {
+  width: 100px;
+}
+
+.initial-letter {
+  height: 50px;
+  width: 50px;
+  background-color: greenyellow;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.delete-img {
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+}
