@@ -14,7 +14,7 @@ class Info extends Component {
     return (
       <li>
         <div>
-          <p className="initial-letter">{eachItem.name[0]}</p>
+          <p className="initial-letter">{eachItem.gmail[0].toUpperCase()}</p>
         </div>
         <div>
           <p>{eachItem.gmail}</p>
@@ -30,7 +30,7 @@ class Info extends Component {
           )}
         </div>
         <div>
-          <button type="button" onClick={deleteFunc}>
+          <button data-testid="delete" type="button" onClick={deleteFunc}>
             <img
               className="delete-img"
               src="https://assets.ccbp.in/frontend/react-js/password-manager-delete-img.png"

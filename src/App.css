@@ -90,9 +90,16 @@ body {
 .password-count {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .no-passwords {
   height: 200px;
   width: 200px;
+}
+
+.password-count-para {
+  border-style: solid;
+  border-color: white;
+  border-radius: 3px;
 }

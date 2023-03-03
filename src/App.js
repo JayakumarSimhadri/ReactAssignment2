@@ -68,9 +68,8 @@ class App extends Component {
   }
 
   searchPasswordFunc = event => {
-    const {updateddetailsList} = this.state
     const requiredList = detailsList.filter(eachItem =>
-      eachItem.name.includes(event.target.value),
+      eachItem.gmail.toLowerCase().includes(event.target.value.toLowerCase()),
     )
 
     console.log(detailsList)
@@ -80,7 +79,7 @@ class App extends Component {
 
   render() {
     const {updateddetailsList, gmail, name, password, checked} = this.state
-    console.log(checked)
+    console.log(updateddetailsList)
 
     return (
       <div className="total">
@@ -197,10 +196,10 @@ class App extends Component {
               <ul>
                 {updateddetailsList.map(eachItem => (
                   <Info
-                    key={eachItem.id}
                     eachItem={eachItem}
                     checked={checked}
                     passworddeleteFunc={this.passworddeleteFunc}
+                    key={eachItem.id}
                   />
                 ))}
               </ul>
